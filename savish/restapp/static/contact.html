@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">  
+    <style>
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+        #contact
+        {
+            display: flex;
+            font-size: 30px;
+            gap: 10px;
+            background-color:	rgba(250, 235, 215,0.2);
+            height: 800px;
+        }
+        #contact>div{
+            width: 30%;
+            /* border: 5px solid pink; */
+            padding: 50px;
+        }
+        pre{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #div1
+        {
+            position: absolute;
+            top:40px;
+            right: 100px;
+            border: 50px groove red;
+            background-color: whitesmoke;
+            border-radius: 50px;
+        }
+        input{
+            font-size: 25px;
+            margin-left: 30px;
+        }
+        #textarea
+        {
+          margin-left: 25px;
+          padding: 20px;
+          border: #FFFFFF;
+          padding: 10px;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+
+        #submit
+        {
+          background-color: yellow;
+          color: red;
+          border-radius: 10px;
+        }
+        #label2
+        {
+          border: whitesmoke;
+          padding: 10px;
+          border-radius: 10px;
+
+        }
+        #label1
+        {
+          border: whitesmoke;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        #info
+        {
+          padding: 20px;
+          
+        }
+
+    </style>
+    <script>
+            function f1()
+            {
+                document.getElementById("label3").innerHTML="Informations are saved";
+            }
+    </script>
+    
+</head>
+<body>
+    <div id="contact">
+      
+           <div id="info">
+              <b style="text-decoration: underline ;">ASIAN RESTAURANT</b>
+              <br>
+              <br>
+              <b style="font-size: 50px; color: red;">Customer <br> Support</b>
+              <br>
+              <p>Email:suppor@asianrestaurent.in</p>
+              <br><br>
+    <pre>
+    Corporate Office
+    No. 55, Survey No. 8-14, Ground Floor,
+    I&J Block, Embassy TechVillage,
+    Outer Ring Road, Devarbisanahalli,
+    Bengaluru - 560103, Karnataka, India
+    
+    Corporate Identity Number: U74110KA2013PLC096530
+    Registration Number: 096530
+    
+    Let me know if you like another variation!
+</pre>
+            </div>
+        <div  id="div1">
+            <hr style="font-style: italic;">
+            <b align="center"> Get in touch </b>
+            <br>
+            <br>
+
+            <label id="label2"><input type="text" id="label2" placeholder="Enter Name"></label>
+            <br>
+            <br>
+            <label id="label1"> <input type="text" id="label1"  placeholder="Enter Number"></label>
+            <br>
+            <br>
+            <label ><textarea  id="textarea" placeholder="Enter Message"  rows="10" cols="50"></textarea></label>
+            <br>
+            <br>
+            <label id="label3"> <input type="submit"  id="submit" placeholder="Enter" onclick="f1()"></label>
+            <hr>
+        </div>
+
+    </div>
+</body>
+</html>
